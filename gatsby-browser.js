@@ -1,2 +1,5 @@
 import 'focus-visible'
+import '@fontsource/josefin-sans/latin-300.css'
+import '@fontsource/josefin-sans/latin-400.css'
+import '@fontsource/josefin-sans/latin-600.css'
 import '@/styles/global.css'

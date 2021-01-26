@@ -10,7 +10,7 @@ function IndexPage() {
     <div className="lg:grid lg:grid-cols-desktop min-h-screen">
       <Seo title="Frontend Mentor: Base Apparel coming soon page" />
       <div className="lg:bg-bg-pattern lg:bg-no-repeat lg:bg-cover lg:p-16 xl:pl-container grid place-items-center lg:block">
-        <header className="p-8 lg:p-0 lg:mb-30 place-self-start">
+        <header className="p-8 lg:p-0 lg:mb-34 place-self-start">
           <Logo title="Base Apparel logo" className="w-logo-mobile sm:w-logo-desktop" />
         </header>
         <img

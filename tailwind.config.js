@@ -49,7 +49,7 @@ module.exports = {
         container: '10.3125rem',
       },
       margin: {
-        30: '7.5rem',
+        34: '8.5rem',
       },
       gridTemplateColumns: {
         desktop: '1fr auto',

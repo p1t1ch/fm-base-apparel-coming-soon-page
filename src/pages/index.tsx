@@ -10,7 +10,7 @@ function IndexPage() {
     <div className="lg:grid lg:grid-cols-desktop min-h-screen">
       <Seo title="Frontend Mentor: Base Apparel coming soon page" />
       <div className="lg:bg-bg-pattern lg:bg-no-repeat lg:bg-cover lg:p-16 xl:pl-container grid place-items-center lg:block">
-        <header className="p-8 lg:p-0 lg:mb-32 place-self-start">
+        <header className="p-8 lg:p-0 lg:mb-30 place-self-start">
           <Logo title="Base Apparel logo" className="w-logo-mobile sm:w-logo-desktop" />
         </header>
         <img
@@ -19,7 +19,7 @@ function IndexPage() {
           className="block lg:hidden w-full h-64 sm:h-96 object-cover object-top"
         />
         <main className="max-w-content px-8 pt-16 pb-23 lg:p-0 text-center lg:text-left">
-          <h1 className="font-light text-heading-mobile sm:text-heading tracking-heading uppercase mb-4 sm:mb-8">
+          <h1 className="font-light text-heading-mobile sm:text-heading tracking-heading uppercase mb-4 sm:mb-6">
             We&apos;re <span className="font-semibold text-neutral sm:leading-heading">coming soon</span>
           </h1>
           <p className="text-sm sm:text-base leading-text-mobile sm:leading-7 mb-8 sm:mb-10">

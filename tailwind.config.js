@@ -48,6 +48,9 @@ module.exports = {
         23: '5.75rem',
         container: '10.3125rem',
       },
+      margin: {
+        30: '7.5rem',
+      },
       gridTemplateColumns: {
         desktop: '1fr auto',
       },

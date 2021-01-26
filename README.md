@@ -13,4 +13,4 @@
 
 For this challenge:
 
-1. Practice with Tailwing (round 7)
+1. Practice with Tailwind (round 7)

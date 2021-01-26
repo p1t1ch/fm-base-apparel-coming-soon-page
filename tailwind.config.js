@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       primary: {
+        lightest: '#FFF4F4',
         light: '#F8BFBF',
         DEFAULT: '#CE9898',
         dark: '#EE8B8B',
@@ -18,6 +19,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
+      },
+      backgroundImage: {
+        'bg-pattern': 'url(../icons/bg-pattern.svg)',
       },
     },
   },

@@ -28,12 +28,7 @@ function SubscriptionForm({ className = '', onSubmit, ...props }: React.HTMLProp
   }
 
   return (
-    <form
-      className={`grid sm:grid-cols-form gap-3 sm:gap-4 ${className}`}
-      noValidate
-      onSubmit={handleSubmit}
-      {...props}
-    >
+    <form className={`${className}`} noValidate onSubmit={handleSubmit} {...props}>
       <label htmlFor="email" className="sr-only">
         Your email address
       </label>
@@ -44,26 +39,26 @@ function SubscriptionForm({ className = '', onSubmit, ...props }: React.HTMLProp
           value={email}
           onChange={handleChange}
           placeholder="Email Address"
-          className={`w-full h-10 sm:h-14 px-8 rounded-full border ${
-            error ? 'border-error' : 'border-secondary focus:border-primary'
-          } placeholder-secondary-placeholder text-xs sm:text-base transition-colors`}
+          className={`w-full h-12 sm:h-14 px-6 sm:px-8 rounded-full bg-transparent border ${
+            error ? 'border-error' : 'border-primary border-opacity-50 focus:border-opacity-100'
+          } placeholder-primary placeholder-opacity-50 text-sm sm:text-base text-neutral transition-colors`}
         />
-        {error && <Error />}
+        <div className="absolute right-0 top-0 bottom-0 flex items-center">
+          {error && <Error className="mr-2 sm:mr-4" />}
+          <button
+            type="submit"
+            className="grid place-items-center w-16 sm:w-button h-full bg-gradient-to-br from-primary-light to-primary-dark hover:from-start-hover hover:to-end-hover focus-visible:from-start-hover focus-visible:to-end-hover rounded-full shadow transition-colors"
+          >
+            <Arrow title="Submit" />
+          </button>
+        </div>
       </div>
-      <button
-        type="submit"
-        className="h-10 sm:h-14 text-center bg-primary text-white hover:bg-opacity-80 focus-visible:bg-opacity-80 rounded-full shadow text-xs sm:text-base font-semibold transition-colors"
+      <p
+        role="alert"
+        className={`text-error text-extrasmall text-left pl-6 sm:pl-8 ${error ? 'visible' : 'invisible'}`}
       >
-        <Arrow title="Submit" />
-      </button>
-      {error && (
-        <p
-          role="alert"
-          className="text-error text-extrasmall sm:text-xs italic sm:absolute sm:left-8 sm:-bottom-8 mb-2"
-        >
-          {error}
-        </p>
-      )}
+        {error || '&nbsp;'}
+      </p>
     </form>
   )
 }
